@@ -1,0 +1,104 @@
+/* CSS stylesheet structure:
+
+@ declarations
+Font            @font-face
+Media           @all @screen @print @tty
+
+Elements
+Body            body
+Block           div header section footer
+Text block      article, h1-h6, p, blockquote, code
+Inline text     span, a, em, sub, sup
+List            ol, ul, li, dl
+Table           
+Named IDs       #foo
+named classes   .foo
+
+Order of styles:
+Display         display, visibility, z-index, float
+Position        position, float, margin, padding, top
+Dimensions      width, height
+Border          border, outline
+Background      background
+Text            font, text, line-height, letter-spacing, color
+List            list-style
+Table           caption-side, empty-cells, table-layout */
+
+/* COMMON SETUPS
+
+flex-box with list items:
+
+    .container {
+        display: flex;
+        justify-content: ;
+        align-items: ;
+        align-content: ;
+        flex-flow: row/col wrap/wrap-reverse;
+        
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block
+    }
+
+*/
+
+* {
+    margin: 0;
+    padding-left: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #000;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p, li, a {
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    height: 500px;
+    z-index: 1;
+}
+
+nav {
+    position: fixed;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    padding: 0 2rem;
+    z-index: 2;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+img {
+    position: fixed;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+main {
+    height: 400px;
+    z-index: 1;
+    background-color: #000;
+}
