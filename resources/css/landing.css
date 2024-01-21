@@ -24,27 +24,6 @@ Text            font, text, line-height, letter-spacing, color
 List            list-style
 Table           caption-side, empty-cells, table-layout */
 
-/* COMMON SETUPS
-
-flex-box with list items:
-
-    .container {
-        display: flex;
-        justify-content: ;
-        align-items: ;
-        align-content: ;
-        flex-flow: row/col wrap/wrap-reverse;
-        
-    ul {
-        list-style: none;
-    }
-
-    li {
-        display: inline-block
-    }
-
-*/
-
 * {
     margin: 0;
     padding-left: 0;
@@ -57,7 +36,6 @@ html {
 
 body {
     background-color: #000;
-    
 }
 
 h1, h2, h3, h4, h5, h6, p, li, a {
@@ -65,21 +43,38 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'Courier New', Courier, monospace;
 }
 
-header {
-    height: 500px;
-    z-index: 1;
+h1 {
+    font-size: 5rem;
+    text-shadow: 5px -5px blue;
 }
 
+div.landing-text {
+    position: absolute;
+    top: 350px;
+    padding-left: 40px;
+    /* padding-top: 10px;
+    padding-bottom: 30px;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid blue; */
+    width: 100%;
+}
+
+
+
 nav {
-    position: fixed;
-    background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 3rem;
-    padding: 0 2rem;
-    z-index: 2;
-    width: 100%;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 255, 1);
 }
 
 ul {
@@ -88,18 +83,29 @@ ul {
 
 li {
     display: inline-block;
-    padding-right: 2rem;
+    background-color: rgba(0, 0, 255, 0.5);
+    
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+div.contact {
+    display: none;
+}
+
+.contact {
+    padding: 50px 0 50px 200px;
+
+}
+
+.contact p {
+    font-size: 1.5rem;
 }
 
 img.slideshow {
-    position: fixed;
     width: 100%;
-    opacity: 0.8;
+    position: absolute;
     z-index: -1;
-}
-
-main {
-    height: 800px;
-    z-index: 1;
-    background-color: #000;
+    filter: brightness(65%);
 }
