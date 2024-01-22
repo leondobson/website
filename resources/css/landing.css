@@ -36,6 +36,7 @@ html {
 
 body {
     background-color: #000;
+    
 }
 
 h1, h2, h3, h4, h5, h6, p, li, a {
@@ -43,28 +44,49 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'Courier New', Courier, monospace;
 }
 
+main {
+    padding-bottom: 25px;
+}
+
 h1 {
-    font-size: 5rem;
     text-shadow: 5px -5px blue;
 }
 
-div.landing-text {
-    position: absolute;
-    top: 350px;
-    padding-left: 40px;
-    /* padding-top: 10px;
-    padding-bottom: 30px;
-    border-top: 1px solid blue;
-    border-bottom: 1px solid blue; */
+img {
     width: 100%;
+    z-index: -1;
+    filter: brightness(65%);
 }
 
+div.landing-text {
+    position: relative;
+    z-index: 1;
+}
 
+h1 {
+    text-shadow: 5px -5px blue;
+}
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: rgba(0, 0, 255, 0.5);
+    font-style: italic;
+    transition: background-color 80ms ease-in 0s;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 255, 1);
+}
+
+li.contact {
+    background-color: white;
 }
 
 a {
@@ -73,39 +95,160 @@ a {
     padding: 10px;
 }
 
-li:hover {
-    background-color: rgba(0, 0, 255, 1);
+.contact a {
+    color: black;
+    font-style: normal;
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    display: inline-block;
-    background-color: rgba(0, 0, 255, 0.5);
-    
-    margin-right: 1.5rem;
-    font-size: 1.5rem;
-    font-style: italic;
-}
-
-div.contact {
-    display: none;
-}
-
-.contact {
-    padding: 50px 0 50px 200px;
-
-}
-
-.contact p {
-    font-size: 1.5rem;
-}
-
-img.slideshow {
+footer {
+    position: relative;
+    bottom: 0;
     width: 100%;
-    position: absolute;
-    z-index: -1;
-    filter: brightness(65%);
+    height: 50px;
+    border-top: 1px solid white;
+}
+
+@media only screen and (min-width: 1206px) and (max-width: 1520px ) {
+
+    div.landing-text {
+        position: relative;
+        top: 350px;
+        width: 100%;
+        height: 200px;
+        padding-left: 40px;
+        margin-bottom: -200px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+
+    }
+}
+
+@media only screen and (min-width: 1520px) {
+
+    div.landing-text {
+        position: relative;
+        top: 475px;
+        width: 100%;
+        height: 250px;
+        padding-left: 40px;
+        margin-bottom: -250px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1.8rem;
+        margin-right: 1.8rem;
+
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1519px ){
+
+    div.landing-text {
+        position: relative;
+        top: 380px;
+        width: 100%;
+        height: 250px;
+        padding-left: 40px;
+        margin-bottom: -250px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin-right: 1.5rem;
+
+    }
+}
+
+
+@media only screen and (min-width: 720px) and (max-width: 1000px ) {
+
+    div.landing-text {
+        position: relative;
+        top: 250px;
+        width: 100%;
+        height: 200px;
+        padding-left: 40px;
+        margin-bottom: -200px;
+        z-index: 1;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    li {
+        display: inline-block;
+        font-size: 1rem;
+        margin-right: 1rem;
+
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 719px ) {
+
+    div.landing-text {
+        position: relative;
+        top: 200px;
+        width: 75%;
+        padding-left: 40px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    li {
+        display: block;
+        margin-bottom: 10px;
+    }
 }
