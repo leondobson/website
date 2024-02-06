@@ -13,15 +13,13 @@ body {
     
 }
 
-h1, h2, h3, h4, h5, h6, p, li, a, figcaption {
+h1, h2, h3, h4, h5, h6, p, li, a {
     color: #FFF;
     font-family: 'Courier New', Courier, monospace;
 }
 
-
-
 header {
-    position: fixed;
+    /* position: fixed; */
     background-color: #000;
     width: 100%;
     height: 150px;
@@ -31,31 +29,23 @@ header {
 
 h1 {
     background-color: #000;
-    
+    width: 100%;
+    /* height: 112px; */
+    font-size: 4rem;
+    letter-spacing: 3px;
     text-shadow: 3px -3px blue;
     text-align: center;
     padding: 1rem 0;
     z-index: 1;
-}
-
-#desktop-h1 {
-    width: 100%;
-    font-size: 4rem;
-    letter-spacing: 3px;
-    
-}
-
-#mobile-h1 {
-    display: none;
+    border-bottom: 1px solid white;
 }
 
 div.logo {
-    position: absolute;
+    position: relative;
     top: 2.3rem;
     left: 4rem;
     background-color: black;
-    height: 25px;
-    width: 25px;
+    height: 0px;
     z-index: 4;
 }
 
@@ -111,13 +101,10 @@ div.logo {
 nav {
     
     display: flex;
-    overflow: auto;
-    white-space: nowrap;
     justify-content: space-around;
     align-items: center;
     /* padding: 0.5rem 0; */
     border-bottom: 1px solid white;
-    border-top: 1px solid white;
 }
 
 nav ul {
@@ -159,73 +146,11 @@ a {
 }
 
 main {
-    padding-top: 150px;
+    /* padding-top: 150px; */
 }
 
-article {
-    padding: 1rem;
-    text-align: justify;
-    width: 65%;
-    margin: 0 auto;
-}
-
-h2 {
-    padding-bottom: 1rem;
-    font-style: italic;
-    letter-spacing: 4px;
-}
-
-h3 {
-    font-weight: bold;
-    padding-bottom: 1rem;
-}
-
-article ul {
-    list-style-type: square;
-    list-style-position: inside;
-}
-
-p {
-    padding-bottom: 1rem;
-}
-
-figure {
-    /* display: inline-block; */
-}
-
-
-
-figure {
-    padding: 5px;
-    z-index: -1;
-    border: 1px solid white;
-    margin: 10px;
-}
-
-#ritorno {
-    float: right;
-    width: 40%;
-    
-}
-
-figcaption {
-    text-align: center;
-    font-style: italic;
-    font-size: 0.7rem;
-    padding-top: 5px;
-}
-
-figure img {
-    display: block;
+img {
     width: 100%;
-}
-
-
-
-#masterchef {
-    float: left;
-    width: 50%;
-    
 }
 
 footer {
@@ -237,12 +162,11 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
-    
     header {
         height: 130px;
     }
     
-    #desktop-h1 {
+    h1 {
         font-size: 3rem;
     }
 
@@ -251,31 +175,21 @@ footer {
         left: 1.8rem;
     }
 
-    main {
+    /* main {
         padding-top: 130px;
-    }
+    } */
 
     article {
         width: 65%;
     }
-
-
 }
 
 /* PHONE POSITION */
 
 @media only screen and (max-width: 700px) {
-    header {
-        height: 293px;
-        padding-top: 20px;
-    }
     
-    div.logo {
-        position: static;
-        display: block;
-        width: 25px;
-        height: 25px;
-        margin: 0 auto;
+    header {
+        height: 200px;
     }
 
     #desktop-h1 {
@@ -285,33 +199,17 @@ footer {
     #mobile-h1 {
         display: block;
         width: 50%;
-        height: 203px;
         margin: 0 auto;
-        padding: 20px 0;
-    }
-
-    #mobile-h1 h1 {
         font-size: 3rem;
-        padding: 0;
-        letter-spacing: 4px;
     }
 
-    nav {
-        justify-content: left;
-    }
-
-    
-
-    main {
-        padding-top: 292px;
-    }
-
-    article {
-        width: 80%;
-    }
-
-    figure {
-        width: 100%;
+    div.logo {
+        position: static;
+        display: block;
+        padding: 20px;
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
     }
 
 
