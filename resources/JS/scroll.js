@@ -7,7 +7,7 @@ function navBarSticky() {
     if (window.scrollY >= sticky) {
         navbar.classList.add("sticky")
     }
-    if (window.scrollY <= 250) {
+    if (window.scrollY <= 248) {
         navbar.classList.remove("sticky")
     }
     

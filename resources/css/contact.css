@@ -29,15 +29,22 @@ header {
 
 h1 {
     background-color: #000;
-    width: 100%;
-    /* height: 112px; */
-    font-size: 4rem;
-    letter-spacing: 3px;
+    
     text-shadow: 3px -3px blue;
     text-align: center;
     padding: 1rem 0;
     z-index: 1;
-    border-bottom: 1px solid white;
+}
+
+#desktop-h1 {
+    width: 100%;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    
+}
+
+#mobile-h1 {
+    display: none;
 }
 
 div.logo {
@@ -99,12 +106,15 @@ div.logo {
 }
 
 nav {
-    
+    background-color: #000;
     display: flex;
+    overflow: auto;
+    white-space: nowrap;
     justify-content: space-around;
     align-items: center;
     /* padding: 0.5rem 0; */
     border-bottom: 1px solid white;
+    border-top: 1px solid white;
 }
 
 nav ul {
@@ -179,8 +189,8 @@ footer {
     header {
         height: 130px;
     }
-
-    h1 {
+    
+    #desktop-h1 {
         font-size: 3rem;
     }
 
@@ -203,7 +213,17 @@ footer {
 @media only screen and (max-width: 700px) {
     
     header {
-        height: 260px;
+        position: static;
+        height: 293px;
+        padding-top: 20px;
+    }
+    
+    div.logo {
+        position: static;
+        display: block;
+        width: 25px;
+        height: 25px;
+        margin: 0 auto;
     }
 
     #desktop-h1 {
@@ -213,22 +233,35 @@ footer {
     #mobile-h1 {
         display: block;
         width: 50%;
+        height: 203px;
         margin: 0 auto;
+        padding: 20px 0;
+    }
+
+    #mobile-h1 h1 {
         font-size: 3rem;
+        padding: 0;
+        letter-spacing: 4px;
     }
 
-
-    div.logo {
-        position: static;
-        display: block;
-        padding: 20px;
-        width: 25px;
-        height: 25px;
-        margin: 0 auto;
+    nav {
+        justify-content: left;
     }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + main {
+        margin-top: 40px;
+    }
+
+    
 
     main {
-        padding-top: 260px;
+        padding-top: 0px;
     }
 
 

@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, figcaption {
     font-family: 'Courier New', Courier, monospace;
 }
 
-
+/* HEADER AND NAV */
 
 header {
     position: fixed;
@@ -48,6 +48,8 @@ h1 {
 #mobile-h1 {
     display: none;
 }
+
+/* LOGO */
 
 div.logo {
     position: absolute;
@@ -109,7 +111,7 @@ div.logo {
 }
 
 nav {
-    
+    background-color: #000;
     display: flex;
     overflow: auto;
     white-space: nowrap;
@@ -162,6 +164,8 @@ main {
     padding-top: 150px;
 }
 
+/* END HEADER AND NAV */
+
 article {
     padding: 1rem;
     text-align: justify;
@@ -189,11 +193,11 @@ p {
     padding-bottom: 1rem;
 }
 
-figure {
-    /* display: inline-block; */
+
+
+#mobile-ritorno {
+    display: none;
 }
-
-
 
 figure {
     padding: 5px;
@@ -202,7 +206,8 @@ figure {
     margin: 10px;
 }
 
-#ritorno {
+#desktop-ritorno {
+    /* display: block; */
     float: right;
     width: 40%;
     
@@ -227,6 +232,56 @@ figure img {
     width: 50%;
     
 }
+
+/* div.background1 {
+    position: absolute;
+    width: 55%;
+    height: 100px;
+    top: 20%px;
+    background-color: blue;
+    opacity: 0.2;
+    z-index: -10;
+}
+
+div.background2 {
+    position: absolute;
+    width: 50%;
+    height: 100px;
+    top: 350px;
+    background-color: blue;
+    opacity: 0.2;
+    z-index: -10;
+}
+
+div.background3 {
+    position: absolute;
+    width: 10%;
+    height: 100px;
+    top: 500px;
+    background-color: blue;
+    opacity: 0.2;
+    z-index: -10;
+}
+
+div.background4 {
+    position: absolute;
+    width: 70%;
+    height: 100px;
+    top: 650px;
+    background-color: blue;
+    opacity: 0.2;
+    z-index: -10;
+}
+
+div.background5 {
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    top: 800px;
+    background-color: blue;
+    opacity: 0.2;
+    z-index: -10;
+} */
 
 footer {
     position: relative;
@@ -266,6 +321,7 @@ footer {
 
 @media only screen and (max-width: 700px) {
     header {
+        position: static;
         height: 293px;
         padding-top: 20px;
     }
@@ -300,19 +356,42 @@ footer {
         justify-content: left;
     }
 
-    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + main {
+        margin-top: 40px;
+    }
 
     main {
-        padding-top: 292px;
+        padding-top: 0px;
     }
 
     article {
         width: 80%;
     }
 
-    figure {
+    h2 {
+        text-align: center;
+    }
+
+    #desktop-ritorno {
+        display: none;
+    }
+
+    #mobile-ritorno {
+        display: block;
+        float: none;
         width: 100%;
     }
 
+    #masterchef {
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
 
 }
