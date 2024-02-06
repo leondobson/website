@@ -16,6 +16,7 @@ body {
 h1, h2, h3, h4, h5, h6, p, li, a {
     color: #FFF;
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 header {
@@ -129,7 +130,7 @@ nav li {
     margin-right: 1rem;
 }
 
-.nav:hover {
+.nav:hover, .socials a:hover {
     background-color: rgba(0, 0, 255, 0.5);
 }
 
@@ -157,17 +158,34 @@ a {
 
 main {
     padding-top: 150px;
+    padding-bottom: 20px;
 }
 
 section {
-    padding: 20px;
+    padding: 40px;
     
+}
+
+section.email {
+    padding-top: 80px;
+}
+
+ul.socials {
+    width: 80%;
+    margin: auto;
+}
+
+.socials a {
+    display: inline;
+    padding: 0;
+    text-decoration: underline;
 }
 
 .socials li {
     display: block;
     background-color: black;
     margin-bottom: 10px;
+    padding: 10px;
 }
 
 span.email {

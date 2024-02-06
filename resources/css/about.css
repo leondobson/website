@@ -203,20 +203,21 @@ figure {
     padding: 5px;
     z-index: -1;
     border: 1px solid white;
-    margin: 10px;
+    margin: 15px;
 }
 
 #desktop-ritorno {
     /* display: block; */
     float: right;
     width: 40%;
+    margin-right: 0;
     
 }
 
 figcaption {
     text-align: center;
     font-style: italic;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding-top: 5px;
 }
 
@@ -230,7 +231,7 @@ figure img {
 #masterchef {
     float: left;
     width: 50%;
-    
+    margin-left: 0;
 }
 
 /* div.background1 {
@@ -386,6 +387,7 @@ footer {
         display: block;
         float: none;
         width: 100%;
+        margin: 10px 0;
     }
 
     #masterchef {
