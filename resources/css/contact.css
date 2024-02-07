@@ -175,10 +175,14 @@ ul.socials {
     margin: auto;
 }
 
-.socials a {
+.socials a, .email a {
     display: inline;
     padding: 0;
     text-decoration: underline;
+}
+
+.inline {
+    display: inline;
 }
 
 .socials li {
