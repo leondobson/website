@@ -6,11 +6,11 @@
 
 html, body {
     font-size: 16px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -24,11 +24,13 @@ h1, h2, h3, h4, h5, h6, p, li, a {
 }
 
 header {
+    position: fixed;
     background-color: #000;
     width: 100%;
     height: 150px;
     /* border-bottom: 1px solid white; */
     background-color: #000;
+    z-index: 4;
 }
 
 h1 {
@@ -51,8 +53,10 @@ h1 {
     display: none;
 }
 
+/* LOGO */
+
 div.logo {
-    position: relative;
+    position: absolute;
     top: 2.3rem;
     left: 4rem;
     background-color: black;
@@ -72,7 +76,7 @@ div.logo {
 #item2 {
     background-color: black;
     position: relative;
-    bottom: 20px;
+    bottom: 25px;
     left: 5px;
     height: 20px;
     width: 10px;
@@ -82,7 +86,7 @@ div.logo {
 #item3 {
     background-color: white;
     position: relative;
-    bottom: 35px;
+    bottom: 45px;
     left: 10px;
     height: 15px;
     width: 5px;
@@ -92,7 +96,7 @@ div.logo {
 #item4 {
     background-color: white;
     position: relative;
-    bottom: 60px;
+    bottom: 50px;
     left: 20px;
     height: 15px;
     width: 5px;
@@ -102,12 +106,14 @@ div.logo {
 #item5 {
     background-color: white;
     position: relative;
-    bottom: 55px;
+    bottom: 75px;
     left: 20px;
     height: 5px;
     width: 5px;
     z-index: 5;
 }
+
+/* END LOGO */
 
 nav {
     background-color: #000;
@@ -159,6 +165,9 @@ a {
     font-style: normal;
 }
 
+main {
+    padding-top: 150px;
+}
 
 img {
     width: 100%;
@@ -170,15 +179,13 @@ h2 {
     letter-spacing: 3px;
     width: 100%;
     padding: 10px;
-    margin-top: 40px;
+    margin: 40px 0;
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 
 }
 
 section.box {
-    position: relative;
-    top: -150px;
     font-size: 1.5rem;
     width: 80%;
     padding: 25px;
@@ -201,12 +208,22 @@ section.box {
 }
 
 .box li {
-    list-style: circle;
+    list-style: square;
     padding-bottom: 10px;
 }
 
 section.introduction {
+    position: relative;
+    top: -150px;
     margin-bottom: -150px;
+}
+
+#video {
+    text-align: center;
+}
+
+div video {
+    max-width: 100%
 }
 
 footer {
@@ -232,6 +249,9 @@ footer {
         left: 1.8rem;
     }
 
+    main {
+        padding-top: 130px;
+    }
 
 }
 
@@ -272,6 +292,10 @@ footer {
 
     nav {
         justify-content: left;
+    }
+
+    nav li:first-child {
+        margin-left: 1rem;
     }
 
     .sticky {
