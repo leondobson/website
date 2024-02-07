@@ -195,7 +195,7 @@ p {
 
 
 
-#mobile-ritorno {
+#mobile-profile {
     display: none;
 }
 
@@ -206,7 +206,7 @@ figure {
     margin: 15px;
 }
 
-#desktop-ritorno {
+#desktop-profile {
     /* display: block; */
     float: right;
     width: 40%;
@@ -379,11 +379,11 @@ footer {
         text-align: center;
     }
 
-    #desktop-ritorno {
+    #desktop-profile {
         display: none;
     }
 
-    #mobile-ritorno {
+    #mobile-profile {
         display: block;
         float: none;
         width: 100%;
