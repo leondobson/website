@@ -23,6 +23,8 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     font-family: 'Courier New', Courier, monospace;
 }
 
+/* HEADER */
+
 header {
     position: fixed;
     background-color: #000;
@@ -89,28 +91,28 @@ div.logo {
     bottom: 45px;
     left: 10px;
     height: 15px;
-    width: 5px;
+    width: 15px;
     z-index: 7;
 }
 
 #item4 {
-    background-color: white;
+    background-color: black;
     position: relative;
-    bottom: 50px;
-    left: 20px;
-    height: 15px;
-    width: 5px;
-    z-index: 5;
+    bottom: 55px;
+    left: 15px;
+    height: 20px;
+    width: 10px;
+    z-index: 8;
 }
 
 #item5 {
     background-color: white;
     position: relative;
-    bottom: 75px;
+    bottom: 70px;
     left: 20px;
-    height: 5px;
+    height: 15px;
     width: 5px;
-    z-index: 5;
+    z-index: 9;
 }
 
 /* END LOGO */
@@ -122,7 +124,6 @@ nav {
     white-space: nowrap;
     justify-content: space-around;
     align-items: center;
-    /* padding: 0.5rem 0; */
     border-bottom: 1px solid white;
     border-top: 1px solid white;
 }
@@ -139,7 +140,7 @@ nav li {
     margin-right: 1rem;
 }
 
-.nav:hover {
+.nav:hover, .box a:hover {
     background-color: rgba(0, 0, 255, 0.5);
 }
 
@@ -169,12 +170,14 @@ main {
     padding-top: 150px;
 }
 
-img {
+/* END HEADER */
+
+img.banner {
     width: 100%;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     letter-spacing: 3px;
     width: 100%;
@@ -186,14 +189,18 @@ h2 {
 }
 
 section.box {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 80%;
-    padding: 25px;
-    margin: 30px auto;
+    padding: 20px;
+    margin: 40px auto;
     border: 1px solid white;
     box-shadow: 12px -12px rgba(0, 0, 255, 0.5);
     background-color: black;
 
+}
+
+.box p {
+    padding-bottom: 15px;
 }
 
 .box h2 {
@@ -204,12 +211,18 @@ section.box {
 
 .box ul {
     padding: 20px;
-    padding-top: 30px;
+    /* padding-top: 30px; */
 }
 
 .box li {
     list-style: square;
     padding-bottom: 10px;
+}
+
+.box a {
+    display: inline-block;
+    text-decoration: underline;
+    padding: 0;
 }
 
 section.introduction {
@@ -218,12 +231,54 @@ section.introduction {
     margin-bottom: -150px;
 }
 
-#video {
+div.ripper {
+    width: 80%;
+    margin: 40px auto;
+    
+}
+
+.ripper img {
+    width: 100%;
+    
+}
+
+section.testimonial {
     text-align: center;
 }
 
-div video {
-    max-width: 100%
+.testimonial div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonial div p {
+    display: inline-block;
+    padding: 20px;
+}
+
+#video {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#video video, #video p {
+    display: inline-block;
+}
+
+#video video {
+    width: 30%;
+    height: auto;
+}
+
+.video-text  {
+    width: 70%;
+    padding: 20px;
+}
+
+#video .video-text p {
+    padding: 10px;
 }
 
 footer {
@@ -232,6 +287,11 @@ footer {
     width: 100%;
     height: 50px;
     border-top: 1px solid white;
+    text-align: center;
+}
+
+footer p {
+    padding: 20px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -329,5 +389,27 @@ footer {
         width: 100%;
     }
 
+    .testimonial div, .testimonial div p {
+        display: block;
+    }
+
+
+    #video {
+        display: block;
+        text-align: center;
+    }
+    
+    #video video {
+        width: 100%;
+        max-width: 100%
+    }
+
+    .video-text  {
+        width: 100%;
+    }
+    
+    #video .video-text p {
+        padding: 10px;
+    }
 
 }

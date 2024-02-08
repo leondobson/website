@@ -3,29 +3,98 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Leon Dobson Sound</title>
-        <link rel="stylesheet" href="resources/css/styles.css">
+        <title>LDS: HOME</title>
+        <link rel="stylesheet" href="resources/css/style.css">
+        <link rel="icon" href="./resources/favicon_io/favicon.ico" type="image">
+        <script src="./resources/JS/scroll.js"></script>
+
     </head>
     <body>
         <header>
-            <nav>
-                <p><strong>LEON DOBSON SOUND</strong></p>
+            <div class="logo">
+                <div id="item1"></div>
+                <div id="item2"></div>
+                <div id="item3"></div>
+                <div id="item4"></div>
+                <div id="item5"></div>
+            </div>
+            <h1 id="desktop-h1">LEON DOBSON SOUND</h1>
+            <div id="mobile-h1">
+                <h1>LEON</h1>
+                <h1>DOBSON</h1>
+                <h1>SOUND</h1>
+            </div>
+            <nav id="navbar">
                 <ul>
-                    <li>ABOUT</li>
-                    <li>EQUIPMENT</li>
-                    <li>CREDITS</li>
-                    <li>TESTIMONIALS</li>
-                    <li>CONTACT</li>
+                    <li class="nav current"><a href="#">HOME</a></li>
+                    <li class="nav"><a href="./about.html">ABOUT</a></li>
+                    <li class="nav"><a href="#">MY WORK</a></li>
+                    <li class="nav"><a href="./testimonials.html">TESTIMONIALS</a></li>
+                    <li class="contact"><a href="./contact.html">CONTACT</a></li>
                 </ul>
             </nav>
-            <img src="resources/images/LeonBooming.jpeg" class="slideshow" alt="hhh">
         </header>
         <main>
+            <img class="banner" src="./resources/images/banner-image.jpeg" alt="">
 
+            <section class="box introduction">
+                <h2>SERVICES</h2>
+                <p>London based freelance location sound recordist, boom operator, and assistant sound.</p>
+                    
+                <p>Offering professional audio recording services for scripted and unscripted media including:</p>
+                <ul>
+                    <li>Films and short films</li>
+                    <li>Corporate videos</li>
+                    <li>Commercials</li>
+                    <li>Interviews</li>
+                    <li>Podcasts</li>
+                    <li>Live events</li>
+                </ul>
+                <p>See a recent example of my work <a href="#recent">here</a></p>
+                <p><a href="#">Download CV</a></p>
+                
+            </section>
+    
+            <div class="ripper">
+                <img src="./resources/images/RipperRevealed.JPG" alt="">
+            </div>
 
+            <section class="box testimonial">
+                <h2>TESTIMONIALS</h2>
+                <div>
+                    <p>'Leon is Leon is Leon is Leon is Leon is Leon isLeon is Leon is Leon is Leon is Leon is Leon is Leon isLeon is' - John Smith</p>
+                    <p>'Leon is Leon is Leon is Leon is Leon is Leon isLeon is Leon is Leon is Leon is Leon is Leon is Leon isLeon is' - Mary Jane</p>
+                </div>
+                <p>More testimonials <a href="./testimonials.html">here</a></p>
+            </section>
+
+            <section class="box equipment">
+                <h2>EQUIPMENT</h2>
+                <p>All kit is owned by me and available depending on the agreed service package.</p>
+                <ul>
+                    <li>Zoom F6 Multitrack Field Recorder</li>
+                    <li>NTG-4 Boom microphone</li>
+                    <li>Sennheiser G4 radio microphones</li>
+                    <li>Sanken Cos-11 lavalier microphones</li>
+                    <li>Boom Pole</li>
+                    <li>In Ear Monitors and headphones</li>
+                    <li>Tentacle Sync timecode boxes</li>
+                </ul>
+            </section>
+
+            <h2>RECENT WORK</h2>
+            <section id="recent" class=" box recent">
+                <div id="video">
+                    <div class="video-text">
+                        <p><i>Black Women Rising, The Podcast</i></p>
+                        <p>Courtesy of Grey Waves Films Ltd. and Black Women Rising Ltd.</p>
+                    </div>
+                    <video src="./resources/videos/blackWomenRising.MP4" controls></video>
+                </div>
+            </section>
         </main>
         <footer>
-            <p>&copy 2024 Leon Dobson Sound. All rights reserved.</p>
+            <p>All rights reserved, Copyright &copy 2024</p>
         </footer>
     </body>
 </html>
