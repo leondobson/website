@@ -257,17 +257,17 @@ section.testimonial {
     padding: 20px;
 }
 
-#video {
+.video {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-#video video, #video p {
+.video video, .video p {
     display: inline-block;
 }
 
-#video video {
+.video video {
     width: 30%;
     height: auto;
 }
@@ -277,7 +277,7 @@ section.testimonial {
     padding: 20px;
 }
 
-#video .video-text p {
+.video-text p {
     padding: 10px;
 }
 
@@ -394,12 +394,12 @@ footer p {
     }
 
 
-    #video {
+    div.video {
         display: block;
         text-align: center;
     }
     
-    #video video {
+    .video video {
         width: 100%;
         max-width: 100%
     }
@@ -408,7 +408,7 @@ footer p {
         width: 100%;
     }
     
-    #video .video-text p {
+    .video-text p {
         padding: 10px;
     }
 
