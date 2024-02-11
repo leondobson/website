@@ -193,6 +193,8 @@ p.sign {
 
 /* END MAIN */
 
+/* FOOTER */
+
 footer {
     position: relative;
     bottom: 0;
@@ -205,6 +207,8 @@ footer {
 footer p {
     padding: 20px;
 }
+
+/* END FOOTER */
 
 @media only screen and (max-width: 960px) {
     

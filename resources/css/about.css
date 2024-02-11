@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, figcaption {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* HEADER AND NAV */
+/* HEADER */
 
 header {
     position: fixed;
@@ -170,7 +170,7 @@ main {
     padding-top: 150px;
 }
 
-/* END HEADER AND NAV */
+/* END HEADER */
 
 article {
     padding: 1rem;
@@ -255,6 +255,8 @@ img.uob {
     margin-right: 10px;
 }
 
+/* FOOTER */
+
 footer {
     position: relative;
     bottom: 0;
@@ -267,6 +269,8 @@ footer {
 footer p {
     padding: 20px;
 }
+
+/* END FOOTER */
 
 @media only screen and (max-width: 960px) {
     

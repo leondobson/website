@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5, h6, p, li, a {
     text-align: center;
 }
 
+/* HEADER */
+
 header {
     position: fixed;
     background-color: #000;
@@ -165,6 +167,10 @@ main {
     padding-bottom: 20px;
 }
 
+/* END HEADER */
+
+/* MAIN */
+
 section {
     width: 80%;
     padding: 40px;
@@ -204,6 +210,8 @@ ul.socials {
     padding: 10px;
 }
 
+/* END MAIN */
+
 footer {
     position: relative;
     bottom: 0;
@@ -215,6 +223,8 @@ footer {
 footer p {
     padding: 20px;
 }
+
+/* END FOOTER */
 
 @media only screen and (max-width: 960px) {
     
@@ -235,9 +245,6 @@ footer p {
         padding-top: 130px;
     }
 
-    article {
-        width: 65%;
-    }
 }
 
 /* PHONE POSITION */
@@ -293,8 +300,6 @@ footer p {
     .sticky + main {
         margin-top: 40px;
     }
-
-    
 
     main {
         padding-top: 0px;

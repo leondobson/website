@@ -172,6 +172,8 @@ main {
 
 /* END HEADER */
 
+/* MAIN */
+
 img.banner {
     width: 100%;
 }
@@ -257,20 +259,32 @@ section.testimonial {
     padding: 20px;
 }
 
+div.zoom {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.zoom img {
+    width: 100%;
+}
+
 .video {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 10px;
 }
 
-.video video, .video p {
+.video video, .video p, iframe{
     display: inline-block;
 }
 
-.video video {
+.video video, iframe {
     width: 30%;
     height: auto;
 }
+
+
 
 .video-text  {
     width: 70%;
@@ -280,6 +294,11 @@ section.testimonial {
 .video-text p {
     padding: 10px;
 }
+
+
+/* END MAIN */
+
+/* FOOTER */
 
 footer {
     position: relative;
@@ -293,6 +312,8 @@ footer {
 footer p {
     padding: 20px;
 }
+
+/* END FOOTER */
 
 @media only screen and (max-width: 960px) {
     
@@ -399,7 +420,7 @@ footer p {
         text-align: center;
     }
     
-    .video video {
+    .video video, .video iframe {
         width: 100%;
         max-width: 100%
     }
